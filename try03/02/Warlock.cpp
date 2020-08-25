@@ -38,9 +38,9 @@ void Warlock::forgetSpell(std::string const &spellName) {
 void Warlock::launchSpell(std::string const &spellName, ATarget const & target) {
 
 	ASpell *spell = spellbook.generateSpell(spellName);
-	if (spell)
+	const ATarget *tar = &target; //fixing crash if bullshit target
+	if (spell && tar)
 		spell->launch(target);
-
 }
 
 
