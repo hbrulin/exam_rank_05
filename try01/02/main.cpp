@@ -42,7 +42,7 @@ int main(void)
 
 	std::cout << "non existent\n";
 	richard.launchSpell("blabla", *tarGen.createTarget("Dummy Practice"));
-	richard.launchSpell("Fwoosh", *tarGen.createTarget("blabla"));
+	richard.launchSpell("Fireball", *tarGen.createTarget("blabla"));
 
 	return(0);
 }
